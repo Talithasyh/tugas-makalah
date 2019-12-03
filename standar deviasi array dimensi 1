@@ -1,0 +1,42 @@
+//*-----------------------------------------------------------*
+//* standardeviasi.cpp                                   *
+//*
+//* memperoleh bilangan terbesar pada array uang ada  *
+
+#include <iostream.h>
+#include <math.h>
+main ()
+{
+    int N,I;
+    float [1000],rata,total=0,Xi_rata=0,SD;
+    
+    /*masukkan jumlah data*/
+    cout << "jumlah dari data (maksmum 1000 buah data) ";
+    cin >> N;
+    
+    /*masukkan data dari ke 0 sampai dengan ke N-1*/
+    /*dan hitung nilai totalnya*/
+    for (I=0;I<N;I++)
+    {
+        cout << "nilai data ke" << (I+1) << ": ";
+        cin >> X[I];
+        total=total+X[I];
+    }
+    /*hitung nilai rata ratanya*/
+    for(I=0;I<N;I++)
+    rata=total/N;
+    
+    /*hitung nilai (Xi-rata rata)^2*/
+    for (I=0;I<N;I++)
+    {
+        Xi_rata+=((X[I]*rata)*(X[I]*Rata));
+    }
+    /*hitung standar deviasi*/
+    SD=sqrt(Xi_rata/N);
+    
+    /*tampilkan hasil*/
+    cout <<"jumlah data = " << N << endl;
+    cout << "total nilai = " << total << endl;
+    cout << "rata rata nilai = " << rata << endl;
+    cout << "deviasi standar = " << SD << endl;
+}
